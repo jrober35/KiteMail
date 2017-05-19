@@ -77,13 +77,15 @@
 		CE806EFA1E79049800A8CB57 /* OutgoingVideoFileMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE806EF81E79049800A8CB57 /* OutgoingVideoFileMessageTableViewCell.swift */; };
 		CE806EFB1E79049800A8CB57 /* OutgoingVideoFileMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE806EF91E79049800A8CB57 /* OutgoingVideoFileMessageTableViewCell.xib */; };
 		D3EE48051EBBCFC700E97447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABA0B871DA6010A000C82DC /* Assets.xcassets */; };
+		D3FBA3811ECE69640066D613 /* ConversationStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FBA37F1ECE69640066D613 /* ConversationStatisticsViewController.swift */; };
+		D3FBA3821ECE69640066D613 /* ConversationStatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3FBA3801ECE69640066D613 /* ConversationStatisticsViewController.xib */; };
 		E25E5A771E735BC8003E1E9B /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25E5A761E735BC8003E1E9B /* Photos.framework */; };
 		E25E5A9B1E7A046D003E1E9B /* ChatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E5A9A1E7A046D003E1E9B /* ChatImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A74B8EF1DC0D11D00EBA0F5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/GroupChannelListViewController.strings; sourceTree = "<group>"; };
-		5ABA0B7D1DA6010A000C82DC /* SendBird-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SendBird-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABA0B7D1DA6010A000C82DC /* KiteMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiteMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABA0B801DA6010A000C82DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ABA0B821DA6010A000C82DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5ABA0B871DA6010A000C82DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -168,6 +170,8 @@
 		CE806EF51E79048200A8CB57 /* IncomingVideoFileMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IncomingVideoFileMessageTableViewCell.xib; path = ../../GroupChannel/ViewCell/IncomingVideoFileMessageTableViewCell.xib; sourceTree = "<group>"; };
 		CE806EF81E79049800A8CB57 /* OutgoingVideoFileMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutgoingVideoFileMessageTableViewCell.swift; path = ../../GroupChannel/ViewCell/OutgoingVideoFileMessageTableViewCell.swift; sourceTree = "<group>"; };
 		CE806EF91E79049800A8CB57 /* OutgoingVideoFileMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OutgoingVideoFileMessageTableViewCell.xib; path = ../../GroupChannel/ViewCell/OutgoingVideoFileMessageTableViewCell.xib; sourceTree = "<group>"; };
+		D3FBA37F1ECE69640066D613 /* ConversationStatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationStatisticsViewController.swift; path = "SendBird-iOS/GroupChannel/ConversationStatisticsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		D3FBA3801ECE69640066D613 /* ConversationStatisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConversationStatisticsViewController.xib; path = "SendBird-iOS/GroupChannel/ConversationStatisticsViewController.xib"; sourceTree = SOURCE_ROOT; };
 		E25E5A761E735BC8003E1E9B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		E25E5A9A1E7A046D003E1E9B /* ChatImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,7 +203,7 @@
 		5ABA0B7E1DA6010A000C82DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5ABA0B7D1DA6010A000C82DC /* SendBird-iOS.app */,
+				5ABA0B7D1DA6010A000C82DC /* KiteMail.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -274,6 +278,8 @@
 			isa = PBXGroup;
 			children = (
 				5ABA0B961DA6022E000C82DC /* ViewCell */,
+				D3FBA37F1ECE69640066D613 /* ConversationStatisticsViewController.swift */,
+				D3FBA3801ECE69640066D613 /* ConversationStatisticsViewController.xib */,
 				5AD94B9A1DAB312200A6CD66 /* CreateGroupChannelSelectOptionViewController.swift */,
 				5AC2B6DD1DB6108300BA4BC7 /* CreateGroupChannelSelectOptionViewController.xib */,
 				5AD94B9C1DAB42D000A6CD66 /* CreateGroupChannelUserListViewController.swift */,
@@ -382,9 +388,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5ABA0B7C1DA6010A000C82DC /* SendBird-iOS */ = {
+		5ABA0B7C1DA6010A000C82DC /* KiteMail */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5ABA0B8F1DA6010A000C82DC /* Build configuration list for PBXNativeTarget "SendBird-iOS" */;
+			buildConfigurationList = 5ABA0B8F1DA6010A000C82DC /* Build configuration list for PBXNativeTarget "KiteMail" */;
 			buildPhases = (
 				A0885E337A6E419ABA67A9A3 /* [CP] Check Pods Manifest.lock */,
 				5ABA0B791DA6010A000C82DC /* Sources */,
@@ -397,9 +403,9 @@
 			);
 			dependencies = (
 			);
-			name = "SendBird-iOS";
+			name = KiteMail;
 			productName = "SendBird-iOS";
-			productReference = 5ABA0B7D1DA6010A000C82DC /* SendBird-iOS.app */;
+			productReference = 5ABA0B7D1DA6010A000C82DC /* KiteMail.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -419,7 +425,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5ABA0B781DA6010A000C82DC /* Build configuration list for PBXProject "SendBird-iOS" */;
+			buildConfigurationList = 5ABA0B781DA6010A000C82DC /* Build configuration list for PBXProject "KiteMail" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -433,7 +439,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5ABA0B7C1DA6010A000C82DC /* SendBird-iOS */,
+				5ABA0B7C1DA6010A000C82DC /* KiteMail */,
 			);
 		};
 /* End PBXProject section */
@@ -451,6 +457,7 @@
 				5AC2B6E51DB6168100BA4BC7 /* GroupChannelListViewController.xib in Resources */,
 				5AD94C2D1DB5F97600A6CD66 /* ChattingView.xib in Resources */,
 				5AC2B6F91DB62BD000BA4BC7 /* OpenChannelListViewController.xib in Resources */,
+				D3FBA3821ECE69640066D613 /* ConversationStatisticsViewController.xib in Resources */,
 				5ADEF81C1DAA616A000AABF9 /* GroupChannelListTableViewCell.xib in Resources */,
 				5AC2B7031DB62C2600BA4BC7 /* BlockedUserListViewController.xib in Resources */,
 				5AD94BB61DAF220100A6CD66 /* OpenChannelListTableViewCell.xib in Resources */,
@@ -570,6 +577,7 @@
 				5AD94BA11DAB878600A6CD66 /* GroupChannelChattingViewController.swift in Sources */,
 				5ABA0BCC1DA65240000C82DC /* IncomingUserMessageTableViewCell.swift in Sources */,
 				5AD94BBB1DAF262C00A6CD66 /* ParticipantListTableViewCell.swift in Sources */,
+				D3FBA3811ECE69640066D613 /* ConversationStatisticsViewController.swift in Sources */,
 				5AD94BC51DAF6FA500A6CD66 /* ParticipantListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -829,7 +837,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5ABA0B781DA6010A000C82DC /* Build configuration list for PBXProject "SendBird-iOS" */ = {
+		5ABA0B781DA6010A000C82DC /* Build configuration list for PBXProject "KiteMail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5ABA0B8D1DA6010A000C82DC /* Debug */,
@@ -838,7 +846,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5ABA0B8F1DA6010A000C82DC /* Build configuration list for PBXNativeTarget "SendBird-iOS" */ = {
+		5ABA0B8F1DA6010A000C82DC /* Build configuration list for PBXNativeTarget "KiteMail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5ABA0B901DA6010A000C82DC /* Debug */,

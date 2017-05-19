@@ -142,7 +142,15 @@ class GroupChannelChattingViewController: UIViewController, SBDConnectionDelegat
                 self.present(plvc, animated: false, completion: nil)
             }
         }
+        let seeConversationStatistics = UIAlertAction(title: "View Conversation Statistics", style: UIAlertActionStyle.default) { (action) in
+          DispatchQueue.main.async {
+            let svc = ConversationStatisticsViewController(nibName: "ConversationStatisticsViewController", bundle:Bundle.main)
+            self.refreshInViewDidAppear = false;
+            self.present(svc, animated: false, completion: nil)
+          }
+        }
         let closeAction = UIAlertAction(title: Bundle.sbLocalizedStringForKey(key: "CloseButton"), style: UIAlertActionStyle.cancel, handler: nil)
+        vc.addAction(seeConversationStatistics)
         vc.addAction(seeMemberListAction)
         vc.addAction(seeBlockedUserListAction)
         vc.addAction(closeAction)

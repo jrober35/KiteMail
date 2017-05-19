@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SendBird-iOS.xcodeproj">
+      location = "group:/Users/johnrobertson/Desktop/SendBird-iOS-master/sample-swift/KiteMail.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
